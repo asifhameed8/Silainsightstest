@@ -1,0 +1,456 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type SettingsAlert {
+  messenger: Boolean
+  bids: Boolean
+  sell: Boolean
+  buy: Boolean
+  like: Boolean
+  mint: Boolean
+  comment: Boolean
+  follow: Boolean
+  followed_post: Boolean
+  followed_comment: Boolean
+  followed_repost: Boolean
+  followed_mint_post: Boolean
+  followed_created_collection: Boolean
+  followed_listed: Boolean
+  followed_sold: Boolean
+}
+
+type Settings {
+  alerts: SettingsAlert!
+  email: SettingsAlert!
+  twoFa: Boolean
+  threeFa: Boolean
+  messagePrivacy: String!
+  isLinkedInEnabled: Boolean!
+  isTwitterEnabled: Boolean!
+  isAutoMintEnabled: Boolean!
+  lastMintedCollection: String!
+}
+
+type UserRefetchResult {
+  user: User!
+}
+
+type FollowingTimestamps {
+  by: User
+  createdAt: DateTime
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type FollowersTimestamps {
+  by: User
+  createdAt: DateTime
+}
+
+type LoginResult {
+  user: User
+  access_token: String
+  twoFa: Boolean
+  threeFa: Boolean
+  notAffiliated: Boolean
+}
+
+type SignOutResult {
+  message: String
+  access_token: String
+}
+
+type EmailSentResult {
+  message: String!
+  success: Boolean!
+  status: Float!
+}
+
+type VerifyCodeOutput {
+  success: Boolean!
+}
+
+type LoginGoogleOutput {
+  user: User
+  access_token: String
+  message: String
+  notAffiliated: Boolean
+  twoFa: Boolean
+}
+
+type VerifyEmailOutput {
+  message: String
+  success: Boolean
+  status: Boolean
+  loginResult: LoginResult
+}
+
+type Verify2FAOutput {
+  message: String
+  success: Boolean
+  status: Boolean
+  token: String
+}
+
+type User {
+  _id: ID!
+  firstName: String
+  lastName: String
+  userName: String
+  email: String
+  phoneNumber: String
+  avatar: String
+  coverImage: String
+  isEmailVerified: Boolean!
+  isActive: Boolean!
+  hideWallet: Boolean!
+  roles: [String!]!
+  isVerified: Boolean
+  isSCC: Boolean
+  scc_status: String
+  verifyStatus: String
+  isBlocked: Boolean
+  isBanned: Boolean
+  facebook: String
+  instagram: String
+  reddit: String
+  twitter: String
+  discord: String
+  youtube: String
+  tiktok: String
+  web: String
+  bio: String
+  wallet: String
+  followers: [User!]
+  followersCount: Float
+  following: [User!]
+  followingCount: Float
+  followingTimestamps: [FollowingTimestamps!]
+  followersTimestamps: [FollowersTimestamps!]
+  blockedBy: [User!]
+  points: Float
+  deletedAt: DateTime
+  isDeleted: Boolean
+  referral: User!
+  settings: Settings
+  blockedUsers: [User!]
+  twitterId: String
+  isLinkedInConnected: Boolean
+  backgroundTheme: String
+  userNameUpdateAt: DateTime
+  affiliatedUser: Boolean
+  lastLogin: DateTime
+  mintedNFTs: Float
+  boughtNFTs: Float
+  soldNFTs: Float
+  listedNFTs: Float
+  createdAt: DateTime
+  recentFollowersCount: Float
+  invitation_code: String
+  login_attempts: Float
+  lockedAt: DateTime
+  onesignal_keys: [String!]!
+  minted: Float
+}
+
+type Styles {
+  Color: String!
+  Size: String!
+}
+
+type Review {
+  overall: Int!
+  verified: Boolean!
+  reviewTime: String!
+  reviewerID: String!
+  asin: String!
+  style: Styles
+  reviewerName: String!
+  reviewText: String
+  summary: String!
+  unixReviewTime: Int
+}
+
+type Product {
+  id: ID!
+  title: String
+  brand: String
+  feature: [String]
+  description: [String]
+  price: String
+  also_view: [String]
+  also_buy: [String]
+  rank: String
+  tech1: JSON
+  date: String
+  asin: String
+  imageURL: [String]
+  imageURLHighRes: [String]
+}
+
+"""
+The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+"""
+scalar JSON
+
+type UserPublicProfile {
+  _id: String
+  userName: String
+  avatar: String
+  firstName: String
+  lastName: String
+  isVerified: Boolean
+  isSCC: Boolean
+  followersCount: Float
+  followingCount: Float
+  recentFollowersCount: Float
+}
+
+type UsersDataOverview {
+  usersCount: Float
+  kycCount: Float
+  postsCount: Float
+  contentCreators: Float
+  blockedUsersCount: Float
+  bannedUsersCount: Float
+  hashtagCount: Float
+  groupsCount: Float
+  sharedPosts: Float
+  repostsCount: Float
+  commentsCount: Float
+  likeCount: Float
+  stageCount: Float
+}
+
+type SingleUserGraphOutput {
+  date: String!
+  count: Float!
+}
+
+type SingleUsersDataOutput {
+  _id: ID!
+  userName: String!
+  followersCount: Float
+  followingCount: Float
+  points: Float
+  avatar: String
+  isVerified: Boolean
+  isBlocked: Boolean
+  isBanned: Boolean
+  isSCC: Boolean
+  postCount: Float
+  repostCount: Float
+  commentCount: Float
+  likeCount: Float
+  listedNFTs: Float
+  soldNFTs: Float
+  boughtNFTs: Float
+  mintedNFTs: Float
+  createdAt: DateTime
+}
+
+type UsersDataOutput {
+  pageSize: Float
+  currentPage: Float
+  next: Boolean
+  data: [SingleUsersDataOutput!]!
+}
+
+type SuccessPayload {
+  message: String
+  success: Boolean
+}
+
+type ReviewPagination {
+  data: [Review!]!
+  total: Int!
+  page: Int!
+  limit: Int!
+}
+
+type ProductPagination {
+  data: [Product!]!
+  total: Int!
+  page: Int!
+  limit: Int!
+}
+
+type Query {
+  users: [User!]!
+  user(id: String!): User!
+  searchUsers(query: String!): [User!]!
+  userProfile(userName: String!): User
+  ownBlockedUsers: [User!]!
+  getUserPublicProfile(userName: String!): UserPublicProfile
+  isUsernameAvailable(userName: String!): VerifyEmailOutput!
+  isEmailAvailable(email: String!): VerifyEmailOutput!
+  usersStats: UsersDataOverview!
+  usersGraphStats: [SingleUserGraphOutput!]!
+  todayUsersStats: UsersDataOverview!
+  usersData(page: Float!, filter: String, search: String): UsersDataOutput!
+  products(page: Int! = 1, limit: Int! = 10): ProductPagination!
+  product(id: String!): Product!
+  reviews(page: Int! = 1, limit: Int! = 10): ReviewPagination!
+  review(id: Int!): Review!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUserInput!): User!
+  myFollowers: [User!]!
+  removeUser(id: Int!): User!
+  changeSettings(data: SettingsInput!): VerifyEmailOutput!
+  editProfile(data: ProfileInput!): User!
+  refetchUser: UserRefetchResult!
+  blockUser(targetUserId: String!): User!
+  unblockUser(targetUserId: String!): User!
+  login(user: LoginUserInput!): LoginResult!
+  signup(data: SignInInput!): SignOutResult!
+  passwordResetEmail(email: String!): EmailSentResult!
+  loginByGoogle(data: LoginGoogleInput!): LoginGoogleOutput!
+  sendPasswordResetEmail(email: String!): String!
+  verifyCode(data: VerifyCodeInput!): VerifyCodeOutput!
+  resetPassword(data: ResetPasswordInput!): VerifyCodeOutput!
+  verifyEmail: VerifyEmailOutput!
+  send2faCode: VerifyEmailOutput!
+  verify2faCode(code: String!): Verify2FAOutput!
+  verify2faLogin(code: String!): LoginResult!
+  deleteUserAccount: VerifyEmailOutput!
+  updatePassword(currentPassword: String!, newPassword: String!): String!
+  adminLogin(user: LoginUserInput!): LoginResult!
+  invitationCodeVerify(code: String!): LoginResult!
+  blockUserByAdmin(id: String!, status: Boolean!): SuccessPayload!
+  banUserByAdmin(id: String!, status: Boolean!): SuccessPayload!
+  editProfileByAdmin(id: String!, data: ProfileInputAdmin!): SuccessPayload!
+  createProduct(createProductInput: CreateProductInput!): Product!
+  updateProduct(updateProductInput: UpdateProductInput!): Product!
+  removeProduct(id: String!): Product!
+  createReview(createReviewInput: CreateReviewInput!): Review!
+  updateReview(updateReviewInput: UpdateReviewInput!): Review!
+  removeReview(id: Int!): Review!
+}
+
+input CreateUserInput {
+  """Name field (placeholder)"""
+  name: String!
+}
+
+input SettingsInput {
+  alerts: SettingsAlertInput
+  email: SettingsAlertInput
+  messagePrivacy: String
+  isLinkedInEnabled: Boolean
+  isTwitterEnabled: Boolean
+  isAutoMintEnabled: Boolean
+  lastMintedCollection: String
+  twoFa: Boolean
+  threeFa: Boolean
+  base32_secret: String
+}
+
+input SettingsAlertInput {
+  messenger: Boolean
+  bids: Boolean
+  sell: Boolean
+  buy: Boolean
+  like: Boolean
+  mint: Boolean
+  comment: Boolean
+  follow: Boolean
+  followed_post: Boolean
+  followed_comment: Boolean
+  followed_repost: Boolean
+  followed_mint_post: Boolean
+  followed_created_collection: Boolean
+  followed_listed: Boolean
+  followed_sold: Boolean
+}
+
+input ProfileInput {
+  firstName: String
+  lastName: String
+  userName: String
+  phoneNumber: String
+  avatar: String
+  coverImage: String
+  hideWallet: Boolean
+  wallet: String
+  roles: [String!]
+  facebook: String
+  instagram: String
+  reddit: String
+  twitter: String
+  discord: String
+  youtube: String
+  tiktok: String
+  web: String
+  bio: String
+  country: String
+  backgroundTheme: String
+  onesignal_keys: [String!]
+}
+
+input LoginUserInput {
+  email: String
+  password: String
+}
+
+input SignInInput {
+  email: String
+  password: String!
+  firstName: String
+  lastName: String
+  userName: String
+  phoneNumber: String
+  avatar: String
+  referral: String
+}
+
+input LoginGoogleInput {
+  referral: String
+  token: String!
+}
+
+input VerifyCodeInput {
+  email: String!
+  code: String!
+}
+
+input ResetPasswordInput {
+  email: String!
+  code: String!
+  password: String!
+  confirmPassword: String!
+}
+
+input ProfileInputAdmin {
+  isVerified: Boolean
+  isSCC: Boolean
+  verifyStatus: String
+  scc_status: String
+}
+
+input CreateProductInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateProductInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: String!
+}
+
+input CreateReviewInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateReviewInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: String!
+}
