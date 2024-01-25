@@ -1,0 +1,63 @@
+{
+    "extends": [
+        "next/core-web-vitals",
+        "prettier",
+        "eslint:recommended"
+    ],
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "react-hooks/exhaustive-deps": "off",
+        "@typescript-eslint/interface-name-prefix": "off",
+        "no-useless-escape": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "varsIgnorePattern": "^_",
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "@typescript-eslint/no-explicit-any": "off",
+        "prettier/prettier": [
+            "error",
+            {
+                "extends": [
+                    "next",
+                    "prettier"
+                ],
+                "bracketSpacing": true,
+                // "jsxBracketSameLine": true,
+                "printWidth": 150,
+                "tabWidth": 4,
+                "useTabs": false,
+                "endOfLine": "auto",
+                "arrowParens": "always",
+                "semi": true,
+                "singleQuote": true,
+                "trailingComma": "none"
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.tsx"
+            ],
+            "rules": {
+                "no-undef": "off"
+            }
+        }
+    ]
+}

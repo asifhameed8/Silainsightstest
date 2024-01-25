@@ -1,0 +1,10 @@
+node_modules
+__generated__
+dist
+test
+cypress
+**/*.spec.tsx
+package-lock.json
+public
+seo.json
+.next

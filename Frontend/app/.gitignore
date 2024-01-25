@@ -1,0 +1,27 @@
+# npm
+node_modules
+# next.js build files
+.next
+# environment variables
+.env
+.env.development
+.env.development.local
+.env.local
+# .env.*
+!.env.example   
+dist
+build
+
+# package-lock.json
+.env
+/.vs
+ruffyworld
+yarn.lock
+public/sw.js
+.DS_Store
+/public/robots.txt
+/public/sitemap.xml
+/public/sitemap-0.xml
+
+.evn.dev
+.evn.prod

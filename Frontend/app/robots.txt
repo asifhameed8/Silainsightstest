@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /create-post/
+Disallow: /search
+Disallow: /notifications
+Disallow: /social-share
+Disallow: /static/
+Disallow: /?tab=1
+Disallow: /?tab=2

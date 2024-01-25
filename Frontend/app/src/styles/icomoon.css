@@ -1,0 +1,678 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../../public/assets/fonts/icomoon.eot?xnjk7c');
+    src: url('../../public/assets/fonts/icomoon.eot?xnjk7c#iefix') format('embedded-opentype'),
+        url('../../public/assets/fonts/icomoon.ttf?xnjk7c') format('truetype'), url('../../public/assets/fonts/icomoon.woff?xnjk7c') format('woff'),
+        url('../../public/assets/fonts/icomoon.svg?xnjk7c#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-language:before {
+    content: '\e9d8';
+}
+.icon-dropdownTick:before {
+    content: '\e962';
+}
+.icon-cart:before {
+    content: '\e9d7';
+}
+.icon-members:before {
+    content: '\e91d';
+}
+.icon-maximize:before {
+    content: '\e922';
+}
+.icon-speak:before {
+    content: '\e9d5';
+}
+.icon-screen-share:before {
+    content: '\e9d6';
+}
+.icon-refresh:before {
+    content: '\e918';
+}
+.icon-marketplace:before {
+    content: '\e9d2';
+}
+.icon-upload:before {
+    content: '\e9d3';
+}
+.icon-scedulepost:before {
+    content: '\e9d4';
+}
+.icon-message:before {
+    content: '\e9d0';
+}
+.icon-notification:before {
+    content: '\e9d1';
+}
+.icon-activity1:before {
+    content: '\e9cd';
+}
+.icon-stage:before {
+    content: '\e9ce';
+}
+.icon-staking:before {
+    content: '\e9cf';
+}
+.icon-creator-royalty:before {
+    content: '\e9ca';
+}
+.icon-collection-creator:before {
+    content: '\e9cb';
+}
+.icon-nft-owner:before {
+    content: '\e9cc';
+}
+.icon-nft-presale:before {
+    content: '\e9c9';
+}
+.icon-add--collection:before {
+    content: '\e960';
+}
+.icon-creator-royalties:before {
+    content: '\e9c7';
+}
+.icon-collection-name:before {
+    content: '\e9c8';
+}
+.icon-flag:before {
+    content: '\e99b';
+}
+.icon-microon:before {
+    content: '\e9c6';
+}
+.icon-directChat:before {
+    content: '\e9c4';
+}
+.icon-groupChat:before {
+    content: '\e9c5';
+}
+.icon-VoteDown-filled:before {
+    content: '\e9c2';
+}
+.icon-voteUp:before {
+    content: '\e9c3';
+}
+.icon-filter:before {
+    content: '\e9bf';
+}
+.icon-voteUp-filled:before {
+    content: '\e9c0';
+}
+.icon-VoteDown:before {
+    content: '\e9c1';
+}
+.icon-no-item:before {
+    content: '\e9be';
+}
+.icon-exit:before {
+    content: '\e9ba';
+}
+.icon-expand:before {
+    content: '\e9bd';
+}
+.icon-instagram:before {
+    content: '\e9b9';
+}
+.icon-twitter:before {
+    content: '\e9bb';
+}
+.icon-linkedin:before {
+    content: '\e9bc';
+}
+.icon-emojiReaction:before {
+    content: '\e9b8';
+}
+.icon-createwallet:before {
+    content: '\e9b6';
+}
+.icon-createcollectioin:before {
+    content: '\e9b7';
+}
+.icon-content:before {
+    content: '\e9b5';
+}
+.icon-share:before {
+    content: '\e9b4';
+}
+.icon-fillnotify:before {
+    content: '\e9b3';
+}
+.icon-downloaded:before {
+    content: '\e993';
+}
+.icon-time:before {
+    content: '\e9b1';
+}
+.icon-land-nft:before {
+    content: '\e9b0';
+}
+.icon-airplane:before {
+    content: '\e9ae';
+}
+.icon-info:before {
+    content: '\e9af';
+}
+.icon-airdrop:before {
+    content: '\e9b2';
+}
+.icon-replies:before {
+    content: '\e9ad';
+}
+.icon-icon-gif:before {
+    content: '\e9ac';
+}
+.icon-avlpayout:before {
+    content: '\e9a8';
+}
+.icon-doller:before {
+    content: '\e9a9';
+}
+.icon-totalpayout:before {
+    content: '\e9aa';
+}
+.icon-volume:before {
+    content: '\e9ab';
+}
+.icon-create-post:before {
+    content: '\e9a7';
+}
+.icon-no-data:before {
+    content: '\e9a6';
+}
+.icon-poll-people:before {
+    content: '\e9a5';
+}
+.icon-email-verification:before {
+    content: '\e9a4';
+}
+.icon-minimize:before {
+    content: '\e9a3';
+}
+.icon-bulletlist:before {
+    content: '\e9a2';
+}
+.icon-singlenft:before {
+    content: '\e9a1';
+}
+.icon-kingdom:before {
+    content: '\e9a0';
+}
+.icon-leavecall:before {
+    content: '\e99c';
+}
+.icon-microoff:before {
+    content: '\e99d';
+}
+.icon-raisehand:before {
+    content: '\e99e';
+}
+.icon-screenshare2:before {
+    content: '\e99f';
+}
+.icon-addfriend:before {
+    content: '\e99a';
+}
+.icon-stopvadio:before {
+    content: '\e999';
+}
+.icon-cohost:before {
+    content: '\e998';
+}
+.icon-chat:before {
+    content: '\e98f';
+}
+.icon-detail:before {
+    content: '\e990';
+}
+.icon-fullscreen:before {
+    content: '\e991';
+}
+.icon-hand:before {
+    content: '\e992';
+}
+.icon-invite:before {
+    content: '\e994';
+}
+.icon-member:before {
+    content: '\e995';
+}
+.icon-newcreator:before {
+    content: '\e996';
+}
+.icon-screenshare:before {
+    content: '\e997';
+}
+.icon-chatsetting:before {
+    content: '\e98c';
+}
+.icon-groupprivacy:before {
+    content: '\e98d';
+}
+.icon-leavegroup:before {
+    content: '\e98e';
+}
+.icon-unavialble:before {
+    content: '\e98b';
+}
+.icon-nonotify:before {
+    content: '\e98a';
+}
+.icon-attachment:before {
+    content: '\e97a';
+}
+.icon-call:before {
+    content: '\e97b';
+}
+.icon-chatedit:before {
+    content: '\e97c';
+}
+.icon-download:before {
+    content: '\e97d';
+}
+.icon-end-call:before {
+    content: '\e97e';
+}
+.icon-missed-call:before {
+    content: '\e97f';
+}
+.icon-mute:before {
+    content: '\e980';
+}
+.icon-new-edit:before {
+    content: '\e981';
+}
+.icon-pinned:before {
+    content: '\e982';
+}
+.icon-play:before {
+    content: '\e983';
+}
+.icon-readunread:before {
+    content: '\e984';
+}
+.icon-reply:before {
+    content: '\e985';
+}
+.icon-unpinned:before {
+    content: '\e986';
+}
+.icon-volumedown:before {
+    content: '\e987';
+}
+.icon-volumeup:before {
+    content: '\e988';
+}
+.icon-zoom:before {
+    content: '\e989';
+}
+.icon-collection:before {
+    content: '\e904';
+}
+.icon-minting:before {
+    content: '\e979';
+}
+.icon-audio:before {
+    content: '\e974';
+}
+.icon-mike:before {
+    content: '\e975';
+}
+.icon-pause:before {
+    content: '\e976';
+}
+.icon-reason:before {
+    content: '\e977';
+}
+.icon-videofill:before {
+    content: '\e978';
+}
+.icon-point:before {
+    content: '\e973';
+}
+.icon-collectionnft:before {
+    content: '\e972';
+}
+.icon-link:before {
+    content: '\e971';
+}
+.icon-influencer:before {
+    content: '\e96e';
+}
+.icon-trend-down:before {
+    content: '\e96f';
+}
+.icon-trend-up:before {
+    content: '\e970';
+}
+.icon-nft-status:before {
+    content: '\e96d';
+}
+.icon-delaccount:before {
+    content: '\e96b';
+}
+.icon-lock:before {
+    content: '\e96c';
+}
+.icon-edit-post:before {
+    content: '\e96a';
+}
+.icon-close:before {
+    content: '\e92b';
+}
+.icon-more:before {
+    content: '\e969';
+}
+.icon-video:before {
+    content: '\e968';
+}
+.icon-hash:before {
+    content: '\e967';
+}
+.icon-icon-new-people:before {
+    content: '\e966';
+}
+.icon-register:before {
+    content: '\e965';
+}
+.icon-home:before {
+    content: '\e95a';
+}
+.icon-land:before {
+    content: '\e961';
+}
+.icon-metaverse:before {
+    content: '\e963';
+}
+.icon-presele:before {
+    content: '\e964';
+}
+.icon-nft-name:before {
+    content: '\e957';
+}
+.icon-block:before {
+    content: '\e95b';
+}
+.icon-unfollow:before {
+    content: '\e95c';
+}
+.icon-report1:before {
+    content: '\e95d';
+}
+.icon-reportpost:before {
+    content: '\e95e';
+}
+.icon-vactor:before {
+    content: '\e95f';
+}
+.icon-camera:before {
+    content: '\e954';
+}
+.icon-back:before {
+    content: '\e955';
+}
+.icon-select-collection:before {
+    content: '\e956';
+}
+.icon-fill-key:before {
+    content: '\e953';
+}
+.icon-description:before {
+    content: '\e958';
+}
+.icon-attributes:before {
+    content: '\e959';
+}
+.icon-collect-item:before {
+    content: '\e94d';
+}
+.icon-collect-floor:before {
+    content: '\e948';
+}
+.icon-collect-owners:before {
+    content: '\e94e';
+}
+.icon-collect-cap:before {
+    content: '\e94f';
+}
+.icon-collect-volume:before {
+    content: '\e950';
+}
+.icon-collect-items:before {
+    content: '\e951';
+}
+.icon-collect-highest:before {
+    content: '\e952';
+}
+.icon-activity:before {
+    content: '\e944';
+}
+.icon-creator:before {
+    content: '\e945';
+}
+.icon-currency:before {
+    content: '\e946';
+}
+.icon-gwei:before {
+    content: '\e947';
+}
+.icon-pricerange:before {
+    content: '\e949';
+}
+.icon-properities:before {
+    content: '\e94a';
+}
+.icon-report:before {
+    content: '\e94b';
+}
+.icon-status:before {
+    content: '\e94c';
+}
+.icon-edit:before {
+    content: '\e942';
+}
+.icon-calender:before {
+    content: '\e943';
+}
+.icon-repostfeed:before {
+    content: '\e941';
+}
+.icon-fa:before {
+    content: '\e93e';
+}
+.icon-accsetting:before {
+    content: '\e93f';
+}
+.icon-msgprivacy:before {
+    content: '\e940';
+}
+.icon-key:before {
+    content: '\e93c';
+}
+.icon-mail:before {
+    content: '\e93d';
+}
+.icon-gaurd:before {
+    content: '\e939';
+}
+.icon-otherwallet:before {
+    content: '\e93a';
+}
+.icon-tick:before {
+    content: '\e93b';
+}
+.icon-home1:before {
+    content: '\e938';
+}
+.icon-check:before {
+    content: '\e935';
+}
+.icon-cross:before {
+    content: '\e936';
+}
+.icon-hide:before {
+    content: '\e937';
+}
+.icon-swap:before {
+    content: '\e934';
+}
+.icon-blockchain:before {
+    content: '\e931';
+}
+.icon-catagroy:before {
+    content: '\e932';
+}
+.icon-delete:before {
+    content: '\e933';
+}
+.icon-grid:before {
+    content: '\e92f';
+}
+.icon-gridview:before {
+    content: '\e930';
+}
+.icon-rightarrow:before {
+    content: '\e92e';
+}
+.icon-nftpresele:before {
+    content: '\e92d';
+}
+.icon-left-arrow:before {
+    content: '\e929';
+}
+.icon-livestage:before {
+    content: '\e92a';
+}
+.icon-most-view:before {
+    content: '\e92c';
+}
+.icon-repost:before {
+    content: '\e915';
+}
+.icon-affiliate:before {
+    content: '\e91b';
+}
+.icon-logout:before {
+    content: '\e920';
+}
+.icon-network:before {
+    content: '\e921';
+}
+.icon-plus:before {
+    content: '\e923';
+}
+.icon-profile:before {
+    content: '\e924';
+}
+.icon-settings:before {
+    content: '\e925';
+}
+.icon-ustdt:before {
+    content: '\e926';
+}
+.icon-verification:before {
+    content: '\e927';
+}
+.icon-wallet:before {
+    content: '\e928';
+}
+.icon-arrowtop:before {
+    content: '\e900';
+}
+.icon-comments:before {
+    content: '\e901';
+}
+.icon-emoji:before {
+    content: '\e905';
+}
+.icon-filterby:before {
+    content: '\e909';
+}
+.icon-nft:before {
+    content: '\e90d';
+}
+.icon-poll:before {
+    content: '\e914';
+}
+.icon-search:before {
+    content: '\e919';
+}
+.icon-avalanche:before {
+    content: '\e902';
+}
+.icon-bsc:before {
+    content: '\e903';
+}
+.icon-contacts:before {
+    content: '\e906';
+}
+.icon-copy:before {
+    content: '\e907';
+}
+.icon-crown:before {
+    content: '\e908';
+}
+.icon-eth:before {
+    content: '\e90a';
+}
+.icon-facebook:before {
+    content: '\e90b';
+}
+.icon-filterarrow:before {
+    content: '\e90c';
+}
+.icon-gif:before {
+    content: '\e90e';
+}
+.icon-heart-border:before {
+    content: '\e90f';
+}
+.icon-heart-filled:before {
+    content: '\e910';
+}
+.icon-linkdin:before {
+    content: '\e911';
+}
+.icon-live:before {
+    content: '\e912';
+}
+.icon-metaland:before {
+    content: '\e913';
+}
+.icon-polygon:before {
+    content: '\e916';
+}
+.icon-post:before {
+    content: '\e917';
+}
+.icon-sort:before {
+    content: '\e91a';
+}
+.icon-twiter:before {
+    content: '\e91c';
+}
+.icon-verified:before {
+    content: '\e91e';
+}
+.icon-views:before {
+    content: '\e91f';
+}

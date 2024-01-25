@@ -1,0 +1,8 @@
+{
+    "locales": ["en", "gr", "ja", "uk", "hi", "fr", "ar", "in", "es", "vi", "ur", "ru", "it", "tr", "zh", "tl", "th"],
+    "defaultLocale": "en",
+    "pages": {
+        "*": ["common", "zackChat", "stage"],
+        "/": ["feed"]
+    }
+}

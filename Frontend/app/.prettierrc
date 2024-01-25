@@ -1,0 +1,12 @@
+{
+    "extends": ["next", "prettier", "eslint:recommended"],
+    "bracketSpacing": true,
+    "printWidth": 150,
+    "tabWidth": 4,
+    "useTabs": false,
+    "endOfLine": "auto",
+    "arrowParens": "always",
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "none"
+}
